@@ -27,7 +27,7 @@ protocol HTTPClient {
     func get(from url: URL)
 }
 
-class RemoteFeedLoaderTest: XCTestCase {
+class RemoteFeedLoaderTests: XCTestCase {
     
     func test_init_doesNotRequestDataFromURL() {
         let (_, client) = makeSUT()
