@@ -31,6 +31,7 @@ public final class RemoteFeedLoader {
             if error != nil {
                 completion(.connectivity)
             } else {
+                print("DEBUG: code = \(response?.statusCode)")
                 completion(.invalidData)
             }
         }
