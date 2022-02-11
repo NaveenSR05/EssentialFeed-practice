@@ -17,7 +17,7 @@ class LocalFeedLoader {
         self.currentDate = currentDate
     }
     
-    func save(_ items: [FeedItem], completion: @escaping (NSError?) -> Void) {
+    func save(_ items: [FeedItem], completion: @escaping (Error?) -> Void) {
         store.deleteCachedFeed { [unowned self] error in
             completion(error)
             if error == nil {
@@ -28,7 +28,7 @@ class LocalFeedLoader {
 }
 
 class FeedStore {
-    typealias DeletionCompletion = (NSError?) -> Void
+    typealias DeletionCompletion = (Error?) -> Void
     
     enum ReceivedMessage: Equatable {
         case deleteCachedFeed
@@ -101,7 +101,7 @@ class CacheFeedUseCaseTests: XCTestCase {
         let deletionError = anyNSError()
         
         let exp = expectation(description: "Wait for completion")
-        var receivedError: NSError?
+        var receivedError: Error?
         sut.save(items) { error in
             receivedError = error
             exp.fulfill()
@@ -109,7 +109,7 @@ class CacheFeedUseCaseTests: XCTestCase {
         store.completeDeletion(with: deletionError)
         wait(for: [exp], timeout: 1.0)
         
-        XCTAssertEqual(deletionError as NSError?, receivedError)
+        XCTAssertEqual(receivedError as NSError?, deletionError)
     }
     
     //MARK: - Helper
