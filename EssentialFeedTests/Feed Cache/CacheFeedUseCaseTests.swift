@@ -115,7 +115,7 @@ class CacheFeedUseCaseTests: XCTestCase {
         sut?.save([uniqueItem()]) { receivedResult.append($0) }
         
         sut = nil
-        store.completeDeletionSuccessfully()
+        store.completeDeletion(with: anyNSError())
         XCTAssertTrue(receivedResult.isEmpty)
     }
     
