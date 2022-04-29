@@ -71,7 +71,9 @@ class CoreDataFeedStoreTests: XCTestCase, FeedStoreSpecs {
     }
     
     func test_delete_emptiesPreviouslyInsertedValues() {
+        let sut = makeSUT()
         
+        assertThatDeleteEmptiesPreviouslyInsertedValues(on: sut)
     }
     
     func test_storeSideEffects_runSerially() {
