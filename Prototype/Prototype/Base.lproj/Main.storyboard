@@ -66,7 +66,7 @@ Location</string>
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8h-VN-ckK" userLabel="Image Container">
                                                     <rect key="frame" x="0.0" y="57" width="374" height="374"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aoj-7f-0OX">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aoj-7f-0OX">
                                                             <rect key="frame" x="0.0" y="0.0" width="374" height="374"/>
                                                         </imageView>
                                                     </subviews>
@@ -109,6 +109,7 @@ Description Description Description Description</string>
                                         <constraint firstItem="dga-du-K5H" firstAttribute="top" secondItem="Xcu-GW-XgT" secondAttribute="topMargin" priority="999" constant="6" id="3U4-wt-QPj"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="dga-du-K5H" secondAttribute="bottom" priority="999" constant="6" id="KI3-ru-1H8"/>
                                         <constraint firstItem="dga-du-K5H" firstAttribute="trailing" secondItem="Xcu-GW-XgT" secondAttribute="trailingMargin" id="r9N-m8-Bad"/>
+                                        <constraint firstItem="dga-du-K5H" firstAttribute="leading" secondItem="Xcu-GW-XgT" secondAttribute="leadingMargin" id="xYz-to-8lc"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
