@@ -7,17 +7,27 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Feed View Controller-->
         <scene sceneID="ibR-oU-NOM">
             <objects>
-                <tableViewController id="Ukd-ul-ln1" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="nMh-i7-2z0">
+                <tableViewController id="Ukd-ul-ln1" customClass="FeedViewController" customModule="Prototype" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="nMh-i7-2z0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="diG-yD-fLS">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="8"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="CuV-jc-SuQ">
+                            <rect key="frame" x="0.0" y="663" width="414" height="8"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedImageCell" rowHeight="588" id="8Kn-F9-fTH">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="588"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedImageCell" rowHeight="588" id="8Kn-F9-fTH">
+                                <rect key="frame" x="0.0" y="52.5" width="414" height="588"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Kn-F9-fTH" id="Xcu-GW-XgT">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="588"/>
@@ -53,14 +63,14 @@ Location</string>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8h-VN-ckK" userLabel="Image Container">
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8h-VN-ckK" userLabel="Image Container">
                                                     <rect key="frame" x="0.0" y="57" width="374" height="374"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aoj-7f-0OX">
                                                             <rect key="frame" x="0.0" y="0.0" width="374" height="374"/>
                                                         </imageView>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <color key="backgroundColor" red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstItem="aoj-7f-0OX" firstAttribute="top" secondItem="T8h-VN-ckK" secondAttribute="top" id="6Sc-66-NG6"/>
                                                         <constraint firstAttribute="bottom" secondItem="aoj-7f-0OX" secondAttribute="bottom" id="DLQ-Tq-SRL"/>
@@ -68,6 +78,11 @@ Location</string>
                                                         <constraint firstItem="aoj-7f-0OX" firstAttribute="leading" secondItem="T8h-VN-ckK" secondAttribute="leading" id="awk-AS-CdI"/>
                                                         <constraint firstAttribute="width" secondItem="T8h-VN-ckK" secondAttribute="height" multiplier="1:1" id="tMD-nJ-oDI"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="24"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTC-9d-dIA">
                                                     <rect key="frame" x="0.0" y="439" width="357.5" height="115"/>
@@ -86,6 +101,7 @@ Description Description Description Description</string>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="jnb-i9-nqR" firstAttribute="width" secondItem="dga-du-K5H" secondAttribute="width" id="588-yY-JeD"/>
+                                                <constraint firstItem="T8h-VN-ckK" firstAttribute="width" secondItem="dga-du-K5H" secondAttribute="width" id="jZ0-2e-Cn9"/>
                                             </constraints>
                                         </stackView>
                                     </subviews>
