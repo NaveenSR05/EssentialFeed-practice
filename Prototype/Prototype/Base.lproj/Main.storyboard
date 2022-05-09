@@ -63,7 +63,7 @@ Location</string>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8h-VN-ckK" userLabel="Image Container">
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8h-VN-ckK" userLabel="Feed Image Container">
                                                     <rect key="frame" x="0.0" y="57" width="374" height="374"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aoj-7f-0OX">
@@ -114,6 +114,7 @@ Description Description Description Description</string>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="descriptionLabel" destination="NTC-9d-dIA" id="ZKG-x9-QzP"/>
+                                    <outlet property="feedImageContainer" destination="T8h-VN-ckK" id="NWY-h3-RkF"/>
                                     <outlet property="feedImageView" destination="aoj-7f-0OX" id="lwi-lS-6O6"/>
                                     <outlet property="locationContainer" destination="jnb-i9-nqR" id="kgp-SI-FPg"/>
                                     <outlet property="locationLabel" destination="CBW-F1-XQc" id="g0E-Cu-3nG"/>
