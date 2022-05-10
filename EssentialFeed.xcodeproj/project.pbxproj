@@ -56,6 +56,7 @@
 		938CA1F928297E67002AAFBB /* FeedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938CA1F828297E67002AAFBB /* FeedViewControllerTests.swift */; };
 		938CA1FB282984E9002AAFBB /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938C953B279934E400EB2EEE /* XCTestCase+MemoryLeakTracking.swift */; };
 		938CA1FD28299163002AAFBB /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938CA1FC28299163002AAFBB /* FeedViewController.swift */; };
+		938CA201282A9EA8002AAFBB /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938CA200282A9EA8002AAFBB /* FeedImageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +138,7 @@
 		938CA1F728297E66002AAFBB /* EssentialFeediOSTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EssentialFeediOSTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		938CA1F828297E67002AAFBB /* FeedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerTests.swift; sourceTree = "<group>"; };
 		938CA1FC28299163002AAFBB /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		938CA200282A9EA8002AAFBB /* FeedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -365,6 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				938CA1FC28299163002AAFBB /* FeedViewController.swift */,
+				938CA200282A9EA8002AAFBB /* FeedImageCell.swift */,
 			);
 			path = EssentialFeediOS;
 			sourceTree = "<group>";
@@ -682,6 +685,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				938CA1FD28299163002AAFBB /* FeedViewController.swift in Sources */,
+				938CA201282A9EA8002AAFBB /* FeedImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
