@@ -58,6 +58,7 @@
 		938CA1FD28299163002AAFBB /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938CA1FC28299163002AAFBB /* FeedViewController.swift */; };
 		938CA201282A9EA8002AAFBB /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938CA200282A9EA8002AAFBB /* FeedImageCell.swift */; };
 		938CA203282AC894002AAFBB /* UIView+Shimmering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938CA202282AC894002AAFBB /* UIView+Shimmering.swift */; };
+		938CA206282BFA56002AAFBB /* UIImage+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938CA205282BFA56002AAFBB /* UIImage+TestHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +142,7 @@
 		938CA1FC28299163002AAFBB /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		938CA200282A9EA8002AAFBB /* FeedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCell.swift; sourceTree = "<group>"; };
 		938CA202282AC894002AAFBB /* UIView+Shimmering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmering.swift"; sourceTree = "<group>"; };
+		938CA205282BFA56002AAFBB /* UIImage+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TestHelpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -378,10 +380,19 @@
 		938CA1ED28241D81002AAFBB /* EssentialFeediOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				938CA204282BFA38002AAFBB /* Helpers */,
 				938CA1F828297E67002AAFBB /* FeedViewControllerTests.swift */,
 				938CA1F728297E66002AAFBB /* EssentialFeediOSTests-Bridging-Header.h */,
 			);
 			path = EssentialFeediOSTests;
+			sourceTree = "<group>";
+		};
+		938CA204282BFA38002AAFBB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				938CA205282BFA56002AAFBB /* UIImage+TestHelpers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -699,6 +710,7 @@
 			files = (
 				938CA1F928297E67002AAFBB /* FeedViewControllerTests.swift in Sources */,
 				938CA1FB282984E9002AAFBB /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				938CA206282BFA56002AAFBB /* UIImage+TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
