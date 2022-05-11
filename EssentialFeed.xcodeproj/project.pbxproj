@@ -71,6 +71,7 @@
 		938CA22A282C02D0002AAFBB /* FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938CA229282C02D0002AAFBB /* FeedImageDataLoader.swift */; };
 		938CA22C282C0639002AAFBB /* FeedRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938CA22B282C0639002AAFBB /* FeedRefreshViewController.swift */; };
 		938CA22E282C1DFF002AAFBB /* FeedImageCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938CA22D282C1DFF002AAFBB /* FeedImageCellController.swift */; };
+		938CA231282C271B002AAFBB /* FeedUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938CA230282C271B002AAFBB /* FeedUIComposer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -186,6 +187,7 @@
 		938CA229282C02D0002AAFBB /* FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoader.swift; sourceTree = "<group>"; };
 		938CA22B282C0639002AAFBB /* FeedRefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRefreshViewController.swift; sourceTree = "<group>"; };
 		938CA22D282C1DFF002AAFBB /* FeedImageCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCellController.swift; sourceTree = "<group>"; };
+		938CA230282C271B002AAFBB /* FeedUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIComposer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -491,6 +493,7 @@
 		938CA226282C01E7002AAFBB /* Feed UI */ = {
 			isa = PBXGroup;
 			children = (
+				938CA22F282C2706002AAFBB /* Composer */,
 				938CA20F282BFC4D002AAFBB /* Controllers */,
 				938CA210282BFC54002AAFBB /* Views */,
 			);
@@ -511,6 +514,14 @@
 				938CA229282C02D0002AAFBB /* FeedImageDataLoader.swift */,
 			);
 			path = "Feed Image Loader";
+			sourceTree = "<group>";
+		};
+		938CA22F282C2706002AAFBB /* Composer */ = {
+			isa = PBXGroup;
+			children = (
+				938CA230282C271B002AAFBB /* FeedUIComposer.swift */,
+			);
+			path = Composer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -824,6 +835,7 @@
 				938CA1FD28299163002AAFBB /* FeedViewController.swift in Sources */,
 				938CA201282A9EA8002AAFBB /* FeedImageCell.swift in Sources */,
 				938CA22E282C1DFF002AAFBB /* FeedImageCellController.swift in Sources */,
+				938CA231282C271B002AAFBB /* FeedUIComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
