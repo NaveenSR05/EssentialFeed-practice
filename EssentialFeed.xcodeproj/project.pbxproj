@@ -67,6 +67,7 @@
 		938CA216282BFD35002AAFBB /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938CA200282A9EA8002AAFBB /* FeedImageCell.swift */; };
 		938CA217282BFD38002AAFBB /* UIView+Shimmering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938CA202282AC894002AAFBB /* UIView+Shimmering.swift */; };
 		938CA21B282BFE52002AAFBB /* FeedImageCell+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938CA21A282BFE52002AAFBB /* FeedImageCell+TestHelpers.swift */; };
+		938CA21D282BFF12002AAFBB /* FeedViewControllerTests+LoaderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938CA21C282BFF12002AAFBB /* FeedViewControllerTests+LoaderSpy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +157,7 @@
 		938CA20C282BFB83002AAFBB /* UIControl+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+TestHelpers.swift"; sourceTree = "<group>"; };
 		938CA212282BFCD1002AAFBB /* FeedViewController+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedViewController+TestHelpers.swift"; sourceTree = "<group>"; };
 		938CA21A282BFE52002AAFBB /* FeedImageCell+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedImageCell+TestHelpers.swift"; sourceTree = "<group>"; };
+		938CA21C282BFF12002AAFBB /* FeedViewControllerTests+LoaderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedViewControllerTests+LoaderSpy.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -441,6 +443,7 @@
 			children = (
 				938CA212282BFCD1002AAFBB /* FeedViewController+TestHelpers.swift */,
 				938CA21A282BFE52002AAFBB /* FeedImageCell+TestHelpers.swift */,
+				938CA21C282BFF12002AAFBB /* FeedViewControllerTests+LoaderSpy.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -768,6 +771,7 @@
 				938CA215282BFD28002AAFBB /* FeedViewController.swift in Sources */,
 				938CA216282BFD35002AAFBB /* FeedImageCell.swift in Sources */,
 				938CA21B282BFE52002AAFBB /* FeedImageCell+TestHelpers.swift in Sources */,
+				938CA21D282BFF12002AAFBB /* FeedViewControllerTests+LoaderSpy.swift in Sources */,
 				938CA206282BFA56002AAFBB /* UIImage+TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
