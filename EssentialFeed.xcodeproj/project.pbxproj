@@ -74,6 +74,7 @@
 		938CA231282C271B002AAFBB /* FeedUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938CA230282C271B002AAFBB /* FeedUIComposer.swift */; };
 		938CA235282D64D5002AAFBB /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938CA234282D64D5002AAFBB /* FeedViewModel.swift */; };
 		938CA237282D7C7D002AAFBB /* FeedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938CA236282D7C7D002AAFBB /* FeedImageViewModel.swift */; };
+		93C5D9092834050F004AC98F /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C5D9082834050F004AC98F /* FeedPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -192,6 +193,7 @@
 		938CA230282C271B002AAFBB /* FeedUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIComposer.swift; sourceTree = "<group>"; };
 		938CA234282D64D5002AAFBB /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		938CA236282D7C7D002AAFBB /* FeedImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageViewModel.swift; sourceTree = "<group>"; };
+		93C5D9082834050F004AC98F /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -534,6 +536,7 @@
 			children = (
 				938CA234282D64D5002AAFBB /* FeedViewModel.swift */,
 				938CA236282D7C7D002AAFBB /* FeedImageViewModel.swift */,
+				93C5D9082834050F004AC98F /* FeedPresenter.swift */,
 			);
 			path = "Feed Presentation";
 			sourceTree = "<group>";
@@ -843,6 +846,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93C5D9092834050F004AC98F /* FeedPresenter.swift in Sources */,
 				938CA22A282C02D0002AAFBB /* FeedImageDataLoader.swift in Sources */,
 				938CA22C282C0639002AAFBB /* FeedRefreshViewController.swift in Sources */,
 				938CA203282AC894002AAFBB /* UIView+Shimmering.swift in Sources */,
