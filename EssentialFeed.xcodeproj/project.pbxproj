@@ -497,7 +497,7 @@
 		938CA226282C01E7002AAFBB /* Feed UI */ = {
 			isa = PBXGroup;
 			children = (
-				938CA233282D64BE002AAFBB /* Models */,
+				93C5D90728340414004AC98F /* Feed Presentation */,
 				938CA22F282C2706002AAFBB /* Composer */,
 				938CA20F282BFC4D002AAFBB /* Controllers */,
 				938CA210282BFC54002AAFBB /* Views */,
@@ -529,13 +529,13 @@
 			path = Composer;
 			sourceTree = "<group>";
 		};
-		938CA233282D64BE002AAFBB /* Models */ = {
+		93C5D90728340414004AC98F /* Feed Presentation */ = {
 			isa = PBXGroup;
 			children = (
 				938CA234282D64D5002AAFBB /* FeedViewModel.swift */,
 				938CA236282D7C7D002AAFBB /* FeedImageViewModel.swift */,
 			);
-			path = Models;
+			path = "Feed Presentation";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
