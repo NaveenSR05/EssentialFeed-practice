@@ -69,14 +69,29 @@ Location</string>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GH3-rP-eqh">
                                                             <rect key="frame" x="0.0" y="0.0" width="374" height="374"/>
                                                         </imageView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NjK-sU-2HJ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="374"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="↻">
+                                                                <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="60"/>
+                                                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="retryButtonTapped" destination="QSa-Is-T42" eventType="touchUpInside" id="Tv8-mW-nMx"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="GH3-rP-eqh" secondAttribute="trailing" id="14S-in-i2N"/>
+                                                        <constraint firstItem="NjK-sU-2HJ" firstAttribute="leading" secondItem="his-bk-PPr" secondAttribute="leading" id="1Qd-8t-1qU"/>
+                                                        <constraint firstAttribute="trailing" secondItem="NjK-sU-2HJ" secondAttribute="trailing" id="Ay3-Wv-o5h"/>
                                                         <constraint firstAttribute="width" secondItem="his-bk-PPr" secondAttribute="height" multiplier="1:1" id="HQr-XC-NLK"/>
                                                         <constraint firstItem="GH3-rP-eqh" firstAttribute="top" secondItem="his-bk-PPr" secondAttribute="top" id="JJj-qU-NuT"/>
+                                                        <constraint firstAttribute="bottom" secondItem="NjK-sU-2HJ" secondAttribute="bottom" id="MgS-vd-LgF"/>
                                                         <constraint firstAttribute="bottom" secondItem="GH3-rP-eqh" secondAttribute="bottom" id="NqO-I9-AJM"/>
                                                         <constraint firstItem="GH3-rP-eqh" firstAttribute="leading" secondItem="his-bk-PPr" secondAttribute="leading" id="bVT-i7-zL9"/>
+                                                        <constraint firstItem="NjK-sU-2HJ" firstAttribute="top" secondItem="his-bk-PPr" secondAttribute="top" id="dce-7h-GqL"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -112,6 +127,14 @@ Description Description Description Description</string>
                                         <constraint firstItem="bZf-CT-y8l" firstAttribute="top" secondItem="6fh-Y0-gLy" secondAttribute="topMargin" priority="999" constant="6" id="wzG-N3-2UX"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="jcW-Ji-v6R" id="vZj-9W-tmI"/>
+                                    <outlet property="feedImageContainer" destination="his-bk-PPr" id="4Sl-JC-H1R"/>
+                                    <outlet property="feedImageRetryButton" destination="NjK-sU-2HJ" id="jma-1L-e7J"/>
+                                    <outlet property="feedImageView" destination="GH3-rP-eqh" id="kmq-gD-Rha"/>
+                                    <outlet property="locationContainer" destination="RtY-kh-MDi" id="UYC-N7-WTR"/>
+                                    <outlet property="locationLabel" destination="kT9-Q8-vgG" id="vjr-G3-VDt"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

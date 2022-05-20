@@ -55,7 +55,7 @@ extension FeedViewControllerTests {
             return TaskSpy { [weak self] in self?.cancelledImageURLs.append(url) }
         }
         
-        func completeImageLoading(with data: Data = Data(), at index: Int) {
+        func completeImageLoading(with data: Data = Data(), at index: Int = 0) {
             imageRequests[index].completion(.success(data))
         }
         
