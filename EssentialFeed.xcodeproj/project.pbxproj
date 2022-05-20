@@ -78,6 +78,7 @@
 		93C5D90F283567CF004AC98F /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C5D90E283567CF004AC98F /* FeedViewModel.swift */; };
 		93C5D91D28376573004AC98F /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C5D91C28376573004AC98F /* Feed.storyboard */; };
 		93C5D91F283765B5004AC98F /* Feed.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93C5D91E283765B5004AC98F /* Feed.xcassets */; };
+		93C5D921283774B1004AC98F /* UITableView+Dequeueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C5D920283774B1004AC98F /* UITableView+Dequeueing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -200,6 +201,7 @@
 		93C5D90E283567CF004AC98F /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		93C5D91C28376573004AC98F /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		93C5D91E283765B5004AC98F /* Feed.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Feed.xcassets; sourceTree = "<group>"; };
+		93C5D920283774B1004AC98F /* UITableView+Dequeueing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeueing.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -481,6 +483,7 @@
 				938CA202282AC894002AAFBB /* UIView+Shimmering.swift */,
 				93C5D91C28376573004AC98F /* Feed.storyboard */,
 				93C5D91E283765B5004AC98F /* Feed.xcassets */,
+				93C5D920283774B1004AC98F /* UITableView+Dequeueing.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -860,6 +863,7 @@
 				93C5D9092834050F004AC98F /* FeedPresenter.swift in Sources */,
 				938CA22A282C02D0002AAFBB /* FeedImageDataLoader.swift in Sources */,
 				93C5D90F283567CF004AC98F /* FeedViewModel.swift in Sources */,
+				93C5D921283774B1004AC98F /* UITableView+Dequeueing.swift in Sources */,
 				93C5D90D283567AB004AC98F /* FeedLoadingViewModel.swift in Sources */,
 				938CA203282AC894002AAFBB /* UIView+Shimmering.swift in Sources */,
 				93C5D90B2835592D004AC98F /* FeedImagePresenter.swift in Sources */,
