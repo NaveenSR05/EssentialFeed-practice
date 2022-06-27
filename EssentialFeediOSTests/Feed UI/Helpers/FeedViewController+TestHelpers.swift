@@ -18,6 +18,7 @@ extension FeedViewController {
         return feedImageView(at: index) as? FeedImageCell
     }
     
+    @discardableResult
     func simulateFeedImageViewNotVisible(at index: Int) -> FeedImageCell? {
         let view = simulateFeedImageViewVisible(at: index)
         
